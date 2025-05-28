@@ -8,7 +8,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 
 # Daten laden
-data = pd.read_csv('BigCitiesHealth_Cleaned.csv')  # Ersetze durch deinen Pfad
+data = pd.read_csv('../../Data/BigCitiesHealth_Cleaned.csv')  # Ersetze durch deinen Pfad
 
 # Define target metrics (outcome variables)
 metrics = ['Lung Cancer Deaths', 'Adult Mental Distress', 'Infant Deaths', 

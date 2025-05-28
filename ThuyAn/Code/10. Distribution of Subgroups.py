@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Beispiel-Daten laden
-data = pd.read_csv('BigCitiesHealth_Cleaned.csv')  # Ersetze durch deinen Pfad
+data = pd.read_csv('../../Data/BigCitiesHealth_Cleaned.csv')  # Ersetze durch deinen Pfad
 
 # Die Features, für die der Anteil der Subgruppen berechnet wird
 features = [

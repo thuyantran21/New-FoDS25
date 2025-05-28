@@ -9,7 +9,7 @@ import seaborn as sns
 import os
 
 # Load dataset (cleaned)
-data = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth_Cleaned.csv")
 
 # Define selected features (from Feature Selection Report)
 #features = ['strata_race_label',  'strata_sex_label', 'geo_strata_poverty', 'geo_strata_region', 'geo_strata_PopDensity']

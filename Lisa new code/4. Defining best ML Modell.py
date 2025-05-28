@@ -10,7 +10,7 @@ import seaborn as sns
 import pandas as pd
 
 # 1. Load data
-data = pd.read_csv('../Data/BigCitiesHealth.csv')
+data = pd.read_csv('../../Data/BigCitiesHealth.csv')
 
 # 2. Define features and target
 #features = ['strata_race_label', 'strata_sex_label', 'geo_strata_poverty', 'geo_strata_region', 'geo_strata_PopDensity']
@@ -172,7 +172,7 @@ from sklearn.metrics import r2_score
 import matplotlib.pyplot as plt
 
 # Load data
-data = pd.read_csv('../Data/BigCitiesHealth.csv')
+data = pd.read_csv('../../Data/BigCitiesHealth.csv')
 
 # Define inputs and targets
 features = ['strata_race_label', 'strata_sex_label', 'geo_strata_poverty',
@@ -271,7 +271,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 import matplotlib.pyplot as plt
 
 # Daten laden
-data = pd.read_csv('../Data/BigCitiesHealth.csv')
+data = pd.read_csv('../../Data/BigCitiesHealth.csv')
 
 # Features und Zielmetriken definieren
 features = ['strata_race_label', 'strata_sex_label', 'geo_strata_poverty',

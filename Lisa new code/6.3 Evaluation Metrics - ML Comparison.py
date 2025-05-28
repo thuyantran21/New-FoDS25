@@ -14,7 +14,7 @@ from sklearn.svm import SVR
 import matplotlib.pyplot as plt
 
 # Daten laden
-data = pd.read_csv('../Data/BigCitiesHealth.csv')
+data = pd.read_csv('../../Data/BigCitiesHealth.csv')
 
 # Features und Zielmetrik definieren
 features = ['strata_race_label', 'strata_sex_label', 'geo_strata_poverty',

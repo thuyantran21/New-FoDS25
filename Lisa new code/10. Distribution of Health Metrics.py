@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Beispiel-Daten laden
-data = pd.read_csv('BigCitiesHealth_Cleaned.csv')  # Ersetze durch deinen Pfad
+data = pd.read_csv('../../Data/BigCitiesHealth_Cleaned.csv')  # Ersetze durch deinen Pfad
 
 # Definiere Features und Zielmetriken
 features = [

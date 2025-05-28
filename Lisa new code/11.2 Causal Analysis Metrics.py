@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 # Load the cleaned dataset
-data = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth_Cleaned.csv")
 
 # Define target metrics (outcome variables)
 

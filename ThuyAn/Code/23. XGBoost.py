@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 # Prepare dataset
 targets = ['Low Birthweight', 'Diabetes Deaths', 'Maternal Deaths', 'All Cancer Deaths','Life Expectancy', 'Infant Deaths',]

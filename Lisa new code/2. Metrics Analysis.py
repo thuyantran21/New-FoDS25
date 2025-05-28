@@ -10,7 +10,7 @@ import numpy as np
 from scipy.stats import f_oneway, pearsonr, spearmanr
 
 # Datensatz laden
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 
 # All demographic features

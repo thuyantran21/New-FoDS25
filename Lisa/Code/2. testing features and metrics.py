@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Laden der Daten
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 # Definiere die Zielmetriken und demographischen Merkmale
 metrics = data["metric_item_label"].unique()

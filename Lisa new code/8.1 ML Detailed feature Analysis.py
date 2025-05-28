@@ -5,7 +5,7 @@ from xgboost import XGBClassifier
 import matplotlib.pyplot as plt
 
 # Load dataset (cleaned)
-data = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth_Cleaned.csv")
 average_importance = pd.read_excel("../Outputs/7.1 ML_Results_Optimized.xlsx", sheet_name="Aggregated_Importance", index_col=0)
 
 # Define significant features based on average importance threshold

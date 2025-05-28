@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # Load the cleaned dataset
-data = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth_Cleaned.csv")
 
 # Define target metrics (outcome variables)
 metrics = ['Lung Cancer Deaths', 'Adult Mental Distress', 'Infant Deaths', 

@@ -11,7 +11,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 
 # Load data
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 # Updated targets (corrected spelling)
 targets = [

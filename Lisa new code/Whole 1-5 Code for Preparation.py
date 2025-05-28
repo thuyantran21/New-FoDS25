@@ -21,7 +21,7 @@ from scipy.stats import f_oneway, pearsonr, spearmanr
 #########################################################################################################################
 
 # Load dataset (cleaned)
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 # Metrics and Features (edit for other research questions!)
 features = [
@@ -443,12 +443,12 @@ print(f"Total Rows After Filtering: {cleaned_rows}")
 print(f"Total Rows Removed: {rows_removed} ({percentage_removed:.2f}%)")
 
 # Save cleaned data for ML Model
-data_clean.to_csv("../Data/BigCitiesHealth_Cleaned.csv", index=False)
+data_clean.to_csv("../../Data/BigCitiesHealth_Cleaned.csv", index=False)
 
 
 print("\n#####################################        Checking new Data Set       #####################################") 
 # Load dataset (cleaned)
-data2 = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")
+data2 = pd.read_csv("../../Data/BigCitiesHealth_Cleaned.csv")
 
 # Exploring basics of Data Set
 print("Basics of Cleaned Data Set:")

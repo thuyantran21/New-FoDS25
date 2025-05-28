@@ -9,7 +9,7 @@ from sklearn.compose import ColumnTransformer
 import os
 
 # Laden der Daten
-data = pd.read_csv('BigCitiesHealth.csv')
+data = pd.read_csv('../../Data/BigCitiesHealth_Cleaned.csv')
 
 # Features und Zielvariablen (Targets)
 features = [

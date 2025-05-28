@@ -11,7 +11,7 @@ from scipy.stats import f_oneway, pearsonr, spearmanr
 
 # Datensatz laden
 
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 # Relevante Gesundheitsmetriken auswählen
 relevant_metrics = ['Diabetes Deaths', 'Life Expectancy', 'All Cancer Deaths', 'Breast Cancer Deaths', 

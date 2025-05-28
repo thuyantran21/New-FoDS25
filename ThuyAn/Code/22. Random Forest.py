@@ -9,7 +9,7 @@ import numpy as np
 import seaborn as sns
 
 # Load dataset
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 # Define target outcomes and features
 targets = ['Cardiovascular Disease Deaths', 'Diabetes Deaths', 'Injury Deaths', 'All Cancer Deaths']

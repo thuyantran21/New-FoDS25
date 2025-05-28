@@ -17,7 +17,7 @@ svm_rbf = SVC(kernel='rbf', probability=True, random_state=42)
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import f1_score, make_scorer
 
-data=pd.read_csv("../Data/BigCitiesHealth.csv")
+data=pd.read_csv("../../Data/BigCitiesHealth.csv")
 targets = ['Lung Cancer Deaths', 'Adult Mental Distress', 'Infant Deaths', 'Life Expectancy', 'High Blood Pressure', 'Low Birthweight', 'Maternal Deaths']
 features = ['strata_race_label', 'strata_sex_label', 'geo_strata_poverty', 'geo_strata_Segregation', 'geo_strata_region', 'geo_strata_PopDensity']
 

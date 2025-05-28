@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 
 # Exploring basics of Data Set

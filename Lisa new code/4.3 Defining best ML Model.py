@@ -26,7 +26,7 @@ from sklearn.linear_model import LinearRegression
 warnings.filterwarnings("ignore")
 
 # Load data
-data = pd.read_csv('../Data/BigCitiesHealth.csv')
+data = pd.read_csv('../../Data/BigCitiesHealth.csv')
 features = ['strata_race_label', 'strata_sex_label', 'geo_strata_poverty', 'geo_strata_Segregation', 'geo_strata_region', 'geo_strata_PopDensity']
 targets = ['Lung Cancer Deaths', 'Adult Mental Distress', 'Infant Deaths', 'Life Expectancy', 'High Blood Pressure', 'Low Birthweight', 'Maternal Deaths']
 

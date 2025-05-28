@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 
 # Exploring basics of Data Set
@@ -39,11 +39,14 @@ features =  ("strata_race_label",
 print(features)
 
 # Target Metrics
-metrics = [
-    'Cardiovascular Disease Deaths',
-    'Diabetes Deaths',
-    'Injury Deaths',
-    'All Cancer Deaths'
+metrics  = [
+    'Infant Deaths', 
+    'Life Expectancy',
+    'Low Birthweight',
+    'Adult Mental Distress',
+    'High Blood Pressure',
+    'Lung Cancer Deaths',
+    'Maternal Deaths'
 ]
 
 print("\n################## Metrics ###################")

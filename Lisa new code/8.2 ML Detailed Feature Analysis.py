@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC
 
 # 1. Load data
-data = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth_Cleaned.csv")
 
 # 2. Settings
 metrics = ['Lung Cancer Deaths', 'Adult Mental Distress', 

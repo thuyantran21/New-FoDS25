@@ -9,7 +9,7 @@ import seaborn as sns
 import os
 
 # Load dataset (cleaned)
-data = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth_Cleaned.csv")
 
 
 # Define target metrics (outcome variables) and features    --> Results from Metric and Feature Selection

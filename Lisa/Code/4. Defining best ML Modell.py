@@ -10,7 +10,7 @@ import seaborn as sns
 import pandas as pd
 
 # 1. Load data
-data = pd.read_csv('../Data/BigCitiesHealth.csv')
+data = pd.read_csv('../../Data/BigCitiesHealth.csv')
 
 # Display available columns
 #print("Available columns in the dataset:")

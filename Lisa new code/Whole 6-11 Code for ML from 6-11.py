@@ -23,7 +23,7 @@ from scipy.stats import f_oneway, pearsonr, spearmanr
 #########################################################################################################################
 
 # Load dataset (cleaned)
-data = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth_Cleaned.csv")
 
 # Settings
 features = ['strata_race_label', 'strata_sex_label', 'geo_strata_poverty', 'geo_strata_Segregation', 'geo_strata_region', 'geo_strata_PopDensity']

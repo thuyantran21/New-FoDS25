@@ -6,6 +6,6 @@ import matplotlib.pyplot as plt
 
 
 # Load dataset (cleaned)
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 df = pd.read_excel("../Outputs/ML_Model_Results.xlsx")
 

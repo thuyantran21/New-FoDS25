@@ -9,5 +9,4 @@
 *.bak
 *.swp
 *.DS_Store
-Lisa/Data
-ThuyAn/Data
+Data/

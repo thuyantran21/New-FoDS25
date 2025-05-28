@@ -9,7 +9,7 @@ from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 from numpy import mean, std
 
 # Load data
-data = pd.read_csv("../Data/BigCitiesHealth.csv")
+data = pd.read_csv("../../Data/BigCitiesHealth.csv")
 
 # Targets and features
 targets = [
