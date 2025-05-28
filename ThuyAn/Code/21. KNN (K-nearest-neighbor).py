@@ -12,7 +12,15 @@ from numpy import mean, std
 data = pd.read_csv("../Data/BigCitiesHealth.csv")
 
 # Targets and features
-targets = ['Cardiovascular Disease Deaths', 'Diabetes Deaths', 'Injury Deaths', 'All Cancer Deaths']
+targets = [
+    'Infant Deaths', 
+    'Life Expectancy',
+    'Low Birthweight',
+    'Adult Mental Distress',
+    'High Blood Pressure',
+    'Lung Cancer Deaths',
+    'Maternal Deaths'
+]
 features = [
     'strata_race_label',
     'strata_sex_label',
