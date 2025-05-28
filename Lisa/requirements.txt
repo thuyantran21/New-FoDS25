@@ -1,0 +1,10 @@
+Python Requirements and Packages:
+_______________________________________________________
+create anaconda environment with python 3.12.9
+install following modules;
+-matplotlib 3.10.0
+-seaborn 0.13.2
+-scikit-learn 1.6.1
+-xgboost 2.1.1
+-openpyxl 3.1.5
+
