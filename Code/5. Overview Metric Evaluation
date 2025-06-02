@@ -1,0 +1,25 @@
+########################################################################################################
+################################### Overview of 4. Defining best ML Modell #############################
+########################################################################################################
+'''
+5.1 contains:
+    # Evaluation of Relevant Health Metrics using top_4_ML Models
+    # (those were significant AND showed correlation in Metric Analysis)
+
+5.2 contains:
+    # Same as 6.1 but for all Health Metrics
+
+5.3 contains:
+    # Same, but only with Death Metrics (for direct check of impact on Life durance)
+
+'''
+
+
+########################################################################################################
+################################### Comments (Possible Changes/Improvements) ###########################
+########################################################################################################
+''' 
+Open Discussion about ML Model Selection:
+    --> Log Regression or
+    --> Gradient Boosting?
+'''
