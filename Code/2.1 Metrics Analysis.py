@@ -74,7 +74,8 @@ else:
 
                 if len(groups) > 1:
                     try:
-                        f_stat, p_value_anova = f_oneway(*groups)
+                        #Henry: Not sure if this is valid, you group all features together but the point of oneway ANOVA is looking at one feature e.g. 'strata_sex_label' (Man, Female, All) if it has impacts on the metric response/target variable
+                        f_stat, p_value_anova = f_oneway(*groups) 
                     except ValueError:
                         p_value_anova = np.nan
                 else:
@@ -85,6 +86,8 @@ else:
                     life_expectancy = filtered_data[filtered_data['metric_item_label'] == 'Life Expectancy']['value'].dropna().values
                     target_values = metric_data['value'].dropna().values
 
+                    #Henry: When calculating Pearson/Spearman on both variables ('value' here), it should correspond to the same entity (e.g., country, region, year) (siehe https://en.wikipedia.org/wiki/Pearson_correlation_coefficient#For_a_sample)
+                    #I think truncating the arrays doesn't ensure same entities.
                     # Länge beider Arrays angleichen
                     min_length = min(len(target_values), len(life_expectancy))
                     target_values = target_values[:min_length]

@@ -56,7 +56,7 @@ for target in targets:
                 feature_significance_count[feature] += 1
 
 
-
+print(f'feature_significance_count: {feature_significance_count}')
 # Ergebnisse in einem DataFrame speichern
 anova_df_per_target = pd.DataFrame(anova_results_per_target)
 

@@ -66,7 +66,10 @@ models = {
 model_scores = {name: [] for name in models}
 for target in targets:
     df = data[data['metric_item_label'] == target].dropna(subset=features + ['value']).copy()
-    y = (df['value'] > df['value'].median()).astype(int)
+    #Henry: Why do we treat this problem as a classification problem? Wouldn't it be better to treat it as a regression problem 
+    #and directly predict 'values' instead of classifying if it's below or above the median?
+    #I guess classifying into two groups easier than predicting quantivate values with the limited amount of data available.
+    y = (df['value'] > df['value'].median()).astype(int) 
     X = df[features].astype(np.float32).values  # Important for NKN
 
     for name, model in models.items():
