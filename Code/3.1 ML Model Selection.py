@@ -29,6 +29,8 @@ targets = ['Lung Cancer Deaths', 'Adult Mental Distress', 'Infant Deaths', 'Life
 # Encode categorical features
 for col in features:
     if data[col].dtype == 'object':
+        #Henry: Maybe better to use One-hot Encoding? Since all features more or less don't have 'order' and One-hot encoding ensures ML models not assuming any ordinal relationships among the feature categories
+        #But probably won't make any differences.
         le = LabelEncoder()
         data[col] = le.fit_transform(data[col].astype(str))
 
@@ -68,7 +70,7 @@ for target in targets:
     df = data[data['metric_item_label'] == target].dropna(subset=features + ['value']).copy()
     #Henry: Why do we treat this problem as a classification problem? Wouldn't it be better to treat it as a regression problem 
     #and directly predict 'values' instead of classifying if it's below or above the median?
-    #I guess classifying into two groups easier than predicting quantivate values with the limited amount of data available.
+    #I guess classifying into two groups is easier than predicting quantivate values with the limited amount of data available.
     y = (df['value'] > df['value'].median()).astype(int) 
     X = df[features].astype(np.float32).values  # Important for NKN
 
@@ -154,7 +156,7 @@ for col in features:
     if data[col].dtype == 'object':
         data[col] = LabelEncoder().fit_transform(data[col].astype(str))
 
-scaler = StandardScaler()
+scaler = StandardScaler() #Henry: usually we scale on features which are continuous but since all features are categorical, standardizing them is probably not needed.
 data[features] = scaler.fit_transform(data[features])
 
 # 3. Using only models, that are in top_4_ML and that exist in the mapping

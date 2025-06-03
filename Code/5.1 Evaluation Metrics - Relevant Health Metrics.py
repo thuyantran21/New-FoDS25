@@ -65,6 +65,10 @@ plt.figure(figsize=(14, 22))
 correlation_matrix = pivot_data.corr()
 sns.heatmap(correlation_matrix, cmap='coolwarm', annot=False, linewidths=0.5)
 plt.title("Correlation Heatmap of Relevant Health Metrics", fontsize=16, fontweight='bold')
+# Rotate x-axis labels
+plt.xticks(rotation=45, ha='right')  # Rotate labels 45 degrees and align to the right
+# Rotate y-axis labels
+plt.yticks(rotation=0)  # Rotate labels 0 degrees to keep them horizontal
 plt.savefig("../Output/5.1 Heatmap Correlation of Relevant Health Metrics.jpg")
 plt.show()
 

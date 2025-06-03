@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Beispiel-Daten laden
-data = pd.read_csv('BigCitiesHealth_Cleaned.csv')  # Ersetze durch deinen Pfad
+data = pd.read_csv("../Data/BigCitiesHealth_Cleaned.csv")  # Ersetze durch deinen Pfad
 
 # Definiere Features und Zielmetriken
 features = [
@@ -108,5 +108,5 @@ for metric in metrics:
     handles, labels = ax.get_legend_handles_labels()
     fig.legend(handles, labels, loc='upper right', fontsize=12)
     
-    plt.savefig(f"../Outputs/10. Subgroup Distribution - {metric}.png")
+    plt.savefig(f"../Output/10. Subgroup Distribution - {metric}.png")
     plt.show()

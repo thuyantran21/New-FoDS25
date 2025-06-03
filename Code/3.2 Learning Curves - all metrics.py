@@ -80,7 +80,7 @@ for target in targets:
     # Hyperparameter grid
     param_grid = {
         'model__C': [0.01, 0.1, 1, 10],
-        'model__penalty': ['l2'],
+        'model__penalty': ['l2'], #Henry: Would have also tried L1 and elasticnet penalties
         'model__solver': ['liblinear', 'saga']
     }
 
@@ -132,7 +132,7 @@ for i, target in enumerate(targets):
 
     pipeline = Pipeline([
         ("scaler", StandardScaler()),
-        ("model", LogisticRegression(max_iter=1000, class_weight="balanced"))
+        ("model", LogisticRegression(max_iter=1000, class_weight="balanced")) #Henry: I think you still need to input the best hyper parameters found from above here unless default values are the best lol
     ])
 
     try:                                                                            # Notwendig, da neue metrics nicht alle genug samples haben für verlgeich

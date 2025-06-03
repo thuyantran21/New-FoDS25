@@ -84,6 +84,7 @@ print(f"\nLagged Cross-Correlation Analysis completed. Results saved to {output_
 fig, axes = plt.subplots(len(metrics), 1, figsize=(12, len(metrics) * 4), constrained_layout=True)
 fig.suptitle("Lagged Cross-Correlation Analysis (Causal Features by Metric)", fontsize=16)
 
+#Henry: 'Causaul Impact for All Cancer Deaths' , in the plot Causal color seems to be flipped
 for ax, metric in zip(axes, metrics):
     df_metric = causal_results_all[metric]
     sns.countplot(data=df_metric, x='Feature', hue='Causal', palette='viridis', ax=ax)
